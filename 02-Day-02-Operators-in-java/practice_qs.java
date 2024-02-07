@@ -34,16 +34,23 @@ public class practice_qs {
 
 
        // question 4
-    //    int x=9;
-    //    int y = 12;
-    //    int a=2;
-    //    int b = 4;
-    //    int c=6;
-    //    int exp= 4/3*(x+34)+9*(a+b*c)+(3+y*(2+a))/(a+b*y);
-    //    System.out.println(exp);
+        //  int x=9;
+        //  int y = 12;
+        //  int a=2;
+        //  int b = 4;
+        //  int c=6;
+        //  int exp= 4/3*(x+34)+9*(a+b*c)+(3+y*(2+a))/(a+b*y);
+        //   System.out.println(exp);
 
 
-    
+      // question 5
+      int x =10;
+      int y = 5;
+      int exp1 = (y*(x/y+x/y));
+      int exp2 = (y*x/y+y*x/y);
+      System.out.println(exp1);
+      System.out.println(exp2);
+
     }
     
 }
