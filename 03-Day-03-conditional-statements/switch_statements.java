@@ -19,9 +19,11 @@ public class switch_statements {
            case '*':
            System.out.println(a*b);
                  break;
-            default:
+           case '/':
             System.out.println(a/b);
                 break;
+                default:
+                System.out.println("wrong operator");
         }
     }
 }
