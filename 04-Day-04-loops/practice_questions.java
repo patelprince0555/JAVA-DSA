@@ -36,8 +36,39 @@ public class practice_questions {
 
 
         // question 3
+        // write a program to find the factorial of any number entered by user
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter a number");
+        // int number;
+        // int factorial =1;
+        // number = sc.nextInt();
+        // for(int n=1;n<=number;n++){
+        //     factorial= factorial*n;
+        // }
+        // System.out.println(factorial);
 
-        
+
+        // question 4
+        // write a program to print the multiplication table of anumber N , enterd by the user
+        Scanner sc = new Scanner(System.in);
+        int num;
+        System.out.println("Enter a number");
+        num = sc.nextInt();
+        for(int i=1;i<=10;i++){
+            System.out.println(num+"*"+ i +"="+(num*i));
+        }
+        System.out.println();
+
+        // question 5
+        // for(int i =0; i<=5;i++){
+        //     System.out.println("i ="+i);
+        // }
+        // System.out.println(" i after the loop =" + i);
+        // in this question error is is i 
+
+
+
+
         
 
     }
