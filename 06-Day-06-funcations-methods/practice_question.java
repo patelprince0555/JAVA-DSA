@@ -54,5 +54,14 @@ public class practice_question {
             System.out.println("number:"+number1+"is not a palindrome");
         }
 
+
+        // question
+         // math.min()   it is used to return the smallest of two values
+    //math.max()    it returns the largest of two values
+    // math.sqrt()  it is used to return the square root of a number
+    //math.pow()    it returns the value of first argument raised to the power to second argument
+    //math.avg()    This function is used to get the average value from the given expression.
+    // math.abs()   it will return the absolute value of the given value
+
     }
 }
