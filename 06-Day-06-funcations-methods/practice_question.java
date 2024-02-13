@@ -33,5 +33,10 @@ public class practice_question {
         else{
             System.out.println("it is not even number");
         }
+
+
+
+        // question 3
+        
     }
 }
