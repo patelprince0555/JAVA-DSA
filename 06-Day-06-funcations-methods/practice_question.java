@@ -56,7 +56,7 @@ public class practice_question {
 
 
         // question
-         // math.min()   it is used to return the smallest of two values
+     // math.min()   it is used to return the smallest of two values
     //math.max()    it returns the largest of two values
     // math.sqrt()  it is used to return the square root of a number
     //math.pow()    it returns the value of first argument raised to the power to second argument
