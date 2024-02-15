@@ -1,5 +1,6 @@
 public class print_subarrays {
     public static void printsubarray(int numbers[]){
+        int ts=0;
         for(int i=0;i<numbers.length;i++){
             int start =i;
             for(int j=i;j<numbers.length;j++){
@@ -7,10 +8,12 @@ public class print_subarrays {
                 for(int k=start;k<=end;k++){
                     System.out.print(numbers[k]+" ");
                 }
+                ts++;
                 System.out.println();
             }
             System.out.println();
         }
+        System.out.println("total subarray ="+ts);
     }
     public static void main(String[] args) {
         int numbers[]={2,4,6,8,10};
