@@ -1,3 +1,4 @@
+
 public class linear_search_part_ii {
 
     public static int linearsearch(String fruits[],String key){
@@ -12,5 +13,6 @@ public class linear_search_part_ii {
         String fruits[]={"apple","mango","banana","pineapple","orange"};
         String key="orange";
         System.out.println(linearsearch(fruits, key));
+        
     }
 }
