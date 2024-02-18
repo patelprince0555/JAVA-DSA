@@ -77,6 +77,8 @@ public class Practice_question {
 
 
 
+
+
         //  question 3
         int prices[] ={7,1,5,3,6,4};
         System.out.println(buyandsellstocks(prices));
@@ -86,9 +88,20 @@ public class Practice_question {
 
 
 
+
+
+
         //  question 4
         int height[]={0,1,0,2,1,0,1,3,2,1,2,1};
         System.out.println(trappedwater(height));
+
+
+
+
+
+        
+        //  question 5
+
 
     }
 }
