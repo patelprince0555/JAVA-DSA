@@ -12,16 +12,18 @@ public class Sprial_matrix {
                 System.out.print(matrix[i][endcols]+" ");
             }
             for(int j=endcols-1;j>=startcols;j--){
-                System.out.print(matrix[endrow][j]+" ");
                 if(startrow==endrow){
                     break;
                 }
+                System.out.print(matrix[endrow][j]+" ");
+               
             }
             for(int i=endrow-1;i>=startrow+1;i--){
-                System.out.print(matrix[i][startcols]+" ");
                 if(startrow==endcols){
                     break;
                 }
+                System.out.print(matrix[i][startcols]+" ");
+               
             }
             startrow++;
             startcols++;
