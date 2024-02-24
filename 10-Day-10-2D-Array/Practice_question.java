@@ -69,7 +69,7 @@ public class Practice_question {
       sumofnumbers(nums);
 
 
-    //   question 2
+    //   question 3
       int matrix[][]={{2,3,7},{5,6,7}};
       transpose(matrix);
     }
