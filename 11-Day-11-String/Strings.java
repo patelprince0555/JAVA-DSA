@@ -10,6 +10,15 @@ public class Strings{
         System.out.println(" enter your name");
         String name = sc.nextLine();
         System.out.println(name);
+
+
+        // string concatenate
+        String firstname ="prince";
+        String lastname ="patel";
+        String fullname=firstname+" "+lastname;
+        System.out.println(fullname);
+
+
     
     }
 
