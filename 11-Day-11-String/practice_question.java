@@ -21,5 +21,10 @@ public class practice_question {
         String sb=sc.nextLine();
         lowercasevovels(sb);
 
+
+        //  question 3
+        String str ="Apnacollege".replace("1","");
+        System.out.println(str);
+
     }
 }
