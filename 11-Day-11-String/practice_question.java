@@ -23,8 +23,9 @@ public class practice_question {
 
 
         //  question 3
-        String str ="Apnacollege".replace("1","");
+        String str ="Apnacollege".replace("l","");
         System.out.println(str);
+        // The replace() method searches a string for a specified character, and returns a new string where the specified character(s) are replaced.
 
     }
 }
