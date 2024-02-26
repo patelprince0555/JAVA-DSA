@@ -1,6 +1,9 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class practice_question {
+
+    // question 1
 
     public static void lowercasevovels(String str){
         int count =0;
@@ -12,6 +15,29 @@ public class practice_question {
         }
         System.out.println(count);
 
+    }
+
+//  question 4
+
+    public static void anagrams(String str,String str1){
+
+        str=str.toLowerCase();
+        str1=str1.toLowerCase();
+        if(str.length()==str1.length()){
+            char strarray[]=str.toCharArray();
+            char str1array[]=str1.toCharArray();
+
+            Arrays.sort(strarray);
+            Arrays.sort(str1array);
+           if(Arrays.equals(strarray, str1array)){
+            System.out.println("it is a anagrams");
+           }
+           else{
+            System.out.println("it is not anagram");
+           }
+        }else{
+            System.out.println("it is not anagrams");
+        }
     }
 
     
@@ -34,8 +60,10 @@ public class practice_question {
 
 
         // Determine if 2 Strings are anagrams of each other
+        // question 4
         String str1 ="earth";
-        String str2 ="heart";
+        String str2 ="hearrt";
+        anagrams(str2, str1);
 
     }
 }
