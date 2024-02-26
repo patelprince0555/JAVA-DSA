@@ -13,6 +13,8 @@ public class practice_question {
         System.out.println(count);
 
     }
+
+    
     public static void main(String[] args) {
         //  question 1
         // count how many times lowercase vowels occured in a string entered by the user
@@ -26,6 +28,14 @@ public class practice_question {
         String str ="Apnacollege".replace("l","");
         System.out.println(str);
         // The replace() method searches a string for a specified character, and returns a new string where the specified character(s) are replaced.
+
+
+
+
+
+        // Determine if 2 Strings are anagrams of each other
+        String str1 ="earth";
+        String str2 ="heart";
 
     }
 }
