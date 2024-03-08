@@ -20,6 +20,5 @@ class student {
     }
     student(int roll){
         this.roll=roll;
-        ;
     }
 }
