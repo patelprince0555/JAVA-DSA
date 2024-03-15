@@ -13,13 +13,22 @@ public class practice_question {
     // }
 
 
-    public static void printdigits(int number){
-        if(number==0){
-            return;
+    // public static void printdigits(int number){
+    //     if(number==0){
+    //         return;
+    //     }
+    //     int lastdigit=number%10;
+    //     printdigits(number/10);
+    //     System.out.print(digits[lastdigit]+" ");
+    // }
+
+
+
+    public static int length(String str){
+        if(str.length()==0){
+            return 0;
         }
-        int lastdigit=number%10;
-        printdigits(number/10);
-        System.out.print(digits[lastdigit]+" ");
+        return length(str.substring(1))+1;
     }
     public static void main(String[] args) {
         //  question 1
@@ -29,7 +38,13 @@ public class practice_question {
 
         //  quetion 2
         // you are given a number (eg 2018) convert it into string of english like "two zero one nine"
-        int number=1947;
-        printdigits(number);
+        // int number=1947;
+        // printdigits(number);
+
+
+        // question 3
+        // write a program to find Length of a String using Recursion
+        String str="abcdf";
+        System.out.println(length(str));
     }
 }
