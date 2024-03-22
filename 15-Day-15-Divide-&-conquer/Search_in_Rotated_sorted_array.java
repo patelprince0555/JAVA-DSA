@@ -11,7 +11,7 @@ public class Search_in_Rotated_sorted_array {
         if(arr[si]<=arr[mid]){
             // case a :left
             if(arr[si]<=tar&&tar<=arr[mid]){
-                return search(arr, tar, si, mid-1);
+                return search(arr, tar, si, mid);
             }
             else{
                 // case b right
