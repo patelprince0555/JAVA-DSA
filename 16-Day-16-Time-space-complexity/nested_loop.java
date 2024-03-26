@@ -3,8 +3,9 @@ public class nested_loop {
         // nested for loop
         int n= 3;
         for(int i=0;i<n;i++){
-            for(int j= i+1;j<n;j++);
-            //  so for the nested loop time complexity is o(n^2)
+            for(int j= i+1;j<n;j++){
+            }
         }
+         //  so for the nested loop time complexity is o(n^2)
     }
 }
