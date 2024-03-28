@@ -6,6 +6,9 @@ public class Recursion_factorial {
         return n*fact(n-1);
     }
     public static void main(String[] args) {
+        //  so the time complexity is equal to o(n)
+
+        // so the space complexity is equal to 0(n)
         
     }
 }
