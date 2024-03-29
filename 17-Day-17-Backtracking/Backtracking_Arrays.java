@@ -21,5 +21,9 @@ public class Backtracking_Arrays{
         int arr[]= new int[5];
         changearr(arr, 0, 1);
         printarr(arr);
+
+
+        //  Time complexity is equal to o(n)
+        //  Space complexity is also equal to o(n)
     }
 }
