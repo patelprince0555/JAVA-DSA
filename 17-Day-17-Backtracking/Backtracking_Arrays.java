@@ -8,8 +8,8 @@ public class Backtracking_Arrays{
         }
         // recursion
         arr[i]=val;
-        changearr(arr, i+1, val+1);
-        arr[i]=arr[i]-2;
+        changearr(arr, i+1, val+1);// function call step
+        arr[i]=arr[i]-2;// backtracking step
     }
     public static void printarr(int arr[]){
         for(int i=0;i<arr.length;i++){
