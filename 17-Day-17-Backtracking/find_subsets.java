@@ -2,7 +2,7 @@ public class find_subsets {
     public static void findsubsets(String str ,int i,String ans){
         //  base case
         if(i==str.length()){
-            System.out.println(ans);
+            System.out.print(ans+" ");
             return;
         }
         //  yes
