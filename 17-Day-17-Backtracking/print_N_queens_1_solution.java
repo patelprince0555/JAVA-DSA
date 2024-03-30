@@ -1,4 +1,4 @@
-public class N_queens {
+public class print_N_queens_1_solution {
     public static boolean issafe(char board[][],int row,int col){
         // vertical up
         for(int i=row-1;i>=0;i--){
@@ -22,22 +22,24 @@ public class N_queens {
         return true;
     }
 
-    public static void nqueens(char board[][],int row){
+    public static boolean nqueens(char board[][],int row){
         //  base case
         if(row==board.length){
-            printboard(board);
-            count++;
-            return;
+            // printboard(board);
+            return true;
         }
 
         // column loop
         for(int j=0;j<board.length;j++){
             if(issafe(board, row, j)){
                 board[row][j]='q';
-                nqueens(board, row+1);// function call
-                board[row][j]='x';//backtracking
+               if( nqueens(board, row+1)){
+                return true;
+               }
+                board[row][j]='x';
             }
         }
+        return false;
     }
     public static void printboard(char board[][]){
         System.out.println("___________chess board________");
@@ -50,7 +52,7 @@ public class N_queens {
     }
 
 
-    static int count=0;
+    
     public static void main(String[] args) {
         int n=4;
         char board[][]=new char[n][n];
@@ -59,7 +61,12 @@ public class N_queens {
                 board[i][j]='x';
             }
         }
-        nqueens(board, 0);
-        System.out.println("total ways to solve n queens= "+ count);
+        if(nqueens(board, 0)){
+            System.out.println("solution is possible");
+            printboard(board);
+        }else{
+            System.out.println("solution is not possible");
+        }
+      
     }
 }
