@@ -28,6 +28,9 @@ public class Sodoku {
     }
     public static boolean sudokusolver(int sudoku[][],int row,int col){
         // base case
+        if(row==9){
+            return true;
+        }
         // recursion
         int nextrow=row,nextcol=col+1;
         if(col+1==9){
