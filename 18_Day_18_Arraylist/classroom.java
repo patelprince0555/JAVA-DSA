@@ -9,7 +9,16 @@ public class classroom{
         list.add(2);
         list.add(3);
         list.add(4);
+
+        list.add(2,12);
         System.out.println(list);
+        System.out.println(list.size());
+
+        // print the arraylist
+        for(int i=0;i<list.size();i++){
+            System.out.print(list.get(i)+" ");
+        }
+        System.out.println();
 
 //  get function
         int element =list.get(1);
@@ -22,8 +31,8 @@ public class classroom{
  // set element
         list.set(0, 0);
         System.out.println(list);
-// contain element
 
+// contain element
 System.out.println(list.contains(12));
 System.out.println(list.contains(0));
 
