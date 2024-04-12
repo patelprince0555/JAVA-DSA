@@ -10,5 +10,12 @@ public class classroom{
         list.add(3);
         list.add(4);
         System.out.println(list);
+
+        int element =list.get(1);
+        System.out.println(element);
+
+        list.remove(3);
+        System.out.println(list);
+        
     }
 }
