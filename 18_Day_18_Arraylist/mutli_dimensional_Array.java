@@ -33,5 +33,13 @@ public class mutli_dimensional_Array {
         }
 
         System.out.println(mainlist);
+        //  nested loop
+        for(int i=0;i<mainlist.size();i++){
+            ArrayList<Integer> currarraylist=mainlist.get(i);
+            for(int j=0;j<currarraylist.size();j++){
+                System.out.print(currarraylist.get(j)+" ");
+            }
+            System.out.println();
+        }
     }
 }
