@@ -8,7 +8,11 @@ public class linked_lists{
             this.next=null;
         }
     }
+
+    public static Node head;
+    public static Node tail;
     public static void main(String[] args) {
+        linked_lists ll = new linked_lists();
         
     }
 }
