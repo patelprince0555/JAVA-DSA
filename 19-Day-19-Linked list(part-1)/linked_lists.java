@@ -39,6 +39,10 @@ public class linked_lists{
     }
     public static void main(String[] args) {
         linked_lists ll = new linked_lists();
+        ll.addfirst(2);
+        ll.addfirst(1);
+        ll.addlast(3);
+        ll.addlast(4);
         
     }
 }
