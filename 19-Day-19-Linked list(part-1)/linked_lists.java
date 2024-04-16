@@ -11,6 +11,21 @@ public class linked_lists{
 
     public static Node head;
     public static Node tail;
+
+    public void addfirst(int data){
+        // step 1= create new node
+        Node newNode = new Node(data);
+        if(head==null){
+            head= tail=newNode;
+            return ;
+
+        }
+        // step 2 newnode next= head
+        newNode.next=head;
+
+        // step 3 head = newnode
+        head= newNode;
+    }
     public static void main(String[] args) {
         linked_lists ll = new linked_lists();
         
