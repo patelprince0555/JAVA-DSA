@@ -73,9 +73,6 @@ public class linked_lists{
         temp.next=newNode;
     
     }
-
-    //i =idx-1; temp->prev
-    
     public static void main(String[] args) {
         linked_lists ll = new linked_lists();
         ll.print();
