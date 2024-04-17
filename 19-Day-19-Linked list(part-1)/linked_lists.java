@@ -50,6 +50,24 @@ public class linked_lists{
         }
         System.out.println("null");
     }
+
+    public void add(int idx , int data){
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i=0;
+        while(i<idx-1){
+            temp=temp.next;
+            i++;
+        }
+
+        //i =idx-1; temp->prev
+        newNode.next=temp.next;
+        temp.next=newNode;
+    
+    }
+
+    //i =idx-1; temp->prev
+    
     public static void main(String[] args) {
         linked_lists ll = new linked_lists();
         ll.print();
@@ -60,6 +78,7 @@ public class linked_lists{
         ll.addlast(3);
         ll.print();
         ll.addlast(4);
+        ll.add(3, 100);
         ll.print();
         
     }
