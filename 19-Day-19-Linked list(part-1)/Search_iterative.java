@@ -54,6 +54,20 @@ public class Search_iterative {
     }
 
 
+    public int itrsearch(int key){
+        Node temp=head;
+        int i=0;
+        while(temp!=null){
+            if(temp.data==key){
+                return i;
+            }
+            temp =temp.next;
+            i++;
+        }
+        // key not found
+        return -1;
+    }
+
     public static void main(String[] args) {
 
         Search_iterative ll =new Search_iterative();
@@ -64,6 +78,8 @@ public class Search_iterative {
         ll.addlast(5);
         ll.print();
 
+        System.out.println(ll.itrsearch(3));
+        System.out.println(ll.itrsearch(10));
         
     }
 }
