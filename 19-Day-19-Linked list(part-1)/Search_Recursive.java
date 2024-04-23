@@ -53,6 +53,27 @@ public class Search_Recursive {
         }
         System.out.println("null");
     }
+
+
+    public int helper(Node head ,int key){
+        if(head==null){
+            return -1;
+        }
+
+        if(head.data==key){
+            return 0;
+        }
+        int idx = helper(head.next, key);
+        if(idx==-1){
+            return-1;
+        }
+        return idx+1;
+
+    }
+
+    public int recsearch(int key){
+        return helper(head, key);
+    }
     public static void main(String[] args) {
         Search_Recursive ll= new Search_Recursive();
 
@@ -61,6 +82,8 @@ public class Search_Recursive {
         ll.addlast(3);
         ll.addlast(4);
         ll.addlast(5);
+        System.out.println(ll.recsearch(3));
+        System.out.println(ll.recsearch(10));
         
     }
 }
