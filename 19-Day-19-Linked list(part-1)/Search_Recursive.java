@@ -158,17 +158,24 @@ public class Search_Recursive {
     public static void main(String[] args) {
         Search_Recursive ll= new Search_Recursive();
 
+        // ll.addfirst(1);
+        // ll.addlast(2);
+        // ll.addlast(3);
+        // ll.addlast(4);
+        // ll.addlast(5);
+        // System.out.println(ll.recsearch(3));
+        // System.out.println(ll.recsearch(10));
+
+        // ll.print();
+        // ll.delteNthfromend(3);
+        // ll.print();
+
         ll.addfirst(1);
         ll.addlast(2);
-        ll.addlast(3);
-        ll.addlast(4);
-        ll.addlast(5);
-        System.out.println(ll.recsearch(3));
-        System.out.println(ll.recsearch(10));
-
+        ll.addlast(2);
+        // ll.addlast(1);
         ll.print();
-        ll.delteNthfromend(3);
-        ll.print();
+        System.out.println(ll.checkpalindrome());
         
     }
 }
