@@ -109,6 +109,52 @@ public class Search_Recursive {
         prev.next=prev.next.next;
         return;
     }
+
+    public Node findmid(Node head){
+        Node slow = head;
+        Node fast = head;
+
+        while(fast!=null && fast.next!=null){
+            slow =slow.next;
+            fast =fast.next.next;
+        }
+        return slow;
+    }
+
+    public boolean checkpalindrome(){
+
+        if(head==null || head.next==null){
+            return true;
+        }
+        // step 1 find mid
+        Node midnode= findmid(head);
+
+        // step 2 reverse 2nd mid
+        Node prev = null;
+        Node curr = midnode;
+        Node next;
+
+        while(curr != null){
+            next=curr.next;
+            curr.next= prev;
+            prev= curr;
+            curr=next;
+
+        }
+
+        Node right = prev;
+        Node left =head;
+
+        // step 3 check left half & right half
+        while(right!=null){
+            if(left.data!=right.data){
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
+    }
     public static void main(String[] args) {
         Search_Recursive ll= new Search_Recursive();
 
