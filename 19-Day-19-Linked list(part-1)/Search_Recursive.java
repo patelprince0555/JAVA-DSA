@@ -87,6 +87,28 @@ public class Search_Recursive {
         }
         head=prev;
     }
+
+    public void delteNthfromend(int n){
+        int sz=0;
+        Node temp =head;
+        while(temp!=null){
+            temp=temp.next;
+            sz++;
+        }
+        if(n==sz){
+            head=head.next;
+            return;
+        }
+        int i=1;
+        int iTofind = sz-n;
+        Node prev = head;
+        while(i<iTofind){
+            prev=prev.next;
+            i++;    
+        }
+        prev.next=prev.next.next;
+        return;
+    }
     public static void main(String[] args) {
         Search_Recursive ll= new Search_Recursive();
 
@@ -98,8 +120,8 @@ public class Search_Recursive {
         System.out.println(ll.recsearch(3));
         System.out.println(ll.recsearch(10));
 
-        ll.print();;
-        ll.reverse();
+        ll.print();
+        ll.delteNthfromend(3);
         ll.print();
         
     }
