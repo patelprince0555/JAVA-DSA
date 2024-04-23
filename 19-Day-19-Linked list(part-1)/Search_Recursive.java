@@ -74,6 +74,19 @@ public class Search_Recursive {
     public int recsearch(int key){
         return helper(head, key);
     }
+
+    public void reverse(){
+        Node prev = null;
+        Node curr = tail= head;
+        Node next;
+        while(curr!=null){
+            next=curr.next;
+            curr.next= prev;
+            prev=curr;
+            curr=next;
+        }
+        head=prev;
+    }
     public static void main(String[] args) {
         Search_Recursive ll= new Search_Recursive();
 
@@ -84,6 +97,10 @@ public class Search_Recursive {
         ll.addlast(5);
         System.out.println(ll.recsearch(3));
         System.out.println(ll.recsearch(10));
+
+        ll.print();;
+        ll.reverse();
+        ll.print();
         
     }
 }
