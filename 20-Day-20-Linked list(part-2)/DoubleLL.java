@@ -41,6 +41,7 @@ public class DoubleLL {
             int val =head.data;
             head=head.next;
             head.prev=null;
+            size--;
             return val;
         }
         public void print(){
