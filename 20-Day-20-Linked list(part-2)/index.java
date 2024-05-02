@@ -157,6 +157,46 @@ public class index{
         return merge(newLeft,newRight);
     }
 
+    public void zigzag(){
+        // find mid
+        Node slow = head;
+        Node fast=head.next;
+        while(fast!=null&& fast.next!=null){
+            slow=slow.next;
+            fast= fast.next.next;
+        }
+        Node mid = slow;
+
+
+        // reverse 2nd half
+        Node curr=mid.next;
+        mid.next=null;
+        Node prev=null;
+        Node next;
+
+        while(curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        Node left=head;
+        Node right =prev;
+        Node nextl,nextr;
+
+
+        // alt merge ->zig zag merge
+        while(left!=null&&right!=null){
+            nextl=left.next;
+            left.next=right;
+            nextr=right.next;
+            right.next=nextl;
+
+            left = nextl;
+            right=nextr;
+        }
+    }
+
     public static void main(String[] args) {
         
         // head= new Node(1);
@@ -169,14 +209,16 @@ public class index{
         // removecycle();
         // System.out.println(iscycyle());
          index ll =new index();
-         ll.addfirst(1);
-         ll.addfirst(2);
-         ll.addfirst(3);
-         ll.addfirst(4);
-         ll.addfirst(5);
+         ll.addlast(1);
+         ll.addlast(2);
+         ll.addlast(3);
+         ll.addlast(4);
+         ll.addlast(5);
          ll.print();
-         ll.head=ll.mergeSort(ll.head);
-         ll.print();
+        //  ll.head=ll.mergeSort(ll.head);
+        //  ll.print();
+        ll.zigzag();
+        ll.print();;
 
 
 
