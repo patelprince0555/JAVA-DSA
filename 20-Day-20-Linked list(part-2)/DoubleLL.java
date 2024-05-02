@@ -26,6 +26,23 @@ public class DoubleLL {
              head.prev=newNode;
              head=newNode;
         }
+
+        // remove
+        public int removefirst(){
+            if(head==null){
+                System.out.println("ll is empty");
+                return Integer.MIN_VALUE;
+            }
+            if(size==1){
+                int val=head.data;
+                size--;
+                return val;
+            }
+            int val =head.data;
+            head=head.next;
+            head.prev=null;
+            return val;
+        }
         public void print(){
             Node temp=head;
             while(temp!=null){
@@ -41,6 +58,8 @@ public class DoubleLL {
         ll.addfirst(1);
         ll.print();
         System.out.println(ll.size);
+        ll.removefirst();
+        ll.print();;
         
     }
 }
