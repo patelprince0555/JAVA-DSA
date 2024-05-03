@@ -52,15 +52,33 @@ public class DoubleLL {
             }
             System.out.println("null");
         }
+
+
+        public void reverse(){
+            Node curr = head;
+            Node prev=null;
+            Node next;
+            while(curr!=null){
+                next=curr.next;
+                curr.next=prev;
+                curr.prev=next;
+
+                prev=curr;
+                curr=next;
+            }
+            head=prev;
+        }
     public static void main(String[] args) {
         DoubleLL ll= new DoubleLL();
         ll.addfirst(3);
         ll.addfirst(2);
         ll.addfirst(1);
         ll.print();
-        System.out.println(ll.size);
-        ll.removefirst();
-        ll.print();;
+        // System.out.println(ll.size);
+        // ll.removefirst();
+        ll.print();
+        ll.reverse();
+        ll.print();
         
     }
 }
