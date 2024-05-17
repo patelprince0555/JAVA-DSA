@@ -12,7 +12,7 @@ public class Queue_using_linked_list {
         static Node head=null;
         static Node tail =null;
 
-        public static boolean isEmpty(){
+        public static boolean isempty(){
             return head==null&& tail==null;
         }
 
@@ -29,7 +29,7 @@ public class Queue_using_linked_list {
 
         // remove
         public static int remove(){
-            if(isEmpty()){
+            if(isempty()){
                 System.out.println("empty queue");
                 return -1;
             }
@@ -43,7 +43,7 @@ public class Queue_using_linked_list {
         }
         // peek
         public static int peek(){
-            if(isEmpty()){
+            if(isempty()){
                 System.out.println("empty queue");
                 return-1;
             }
@@ -58,7 +58,7 @@ public class Queue_using_linked_list {
         q.add(4);
         // q.add(5);
         // q.add(6);
-         while (!q.isEmpty()) {
+         while (!q.isempty()) {
             System.out.println(q.peek());
             q.remove();
          }
