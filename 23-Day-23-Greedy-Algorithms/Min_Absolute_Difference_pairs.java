@@ -9,8 +9,8 @@ public class Min_Absolute_Difference_pairs {
         Arrays.sort(B);
 
         int minDiff=0;
-        for(int i=0;i<=A.length;i++){
-            minDiff=Math.abs(A[i]-B[i]);
+        for(int i=0;i<A.length;i++){
+            minDiff= minDiff+Math.abs(A[i]-B[i]);
         }
         System.out.println("min absolute difference pair is: "+minDiff);
     }
