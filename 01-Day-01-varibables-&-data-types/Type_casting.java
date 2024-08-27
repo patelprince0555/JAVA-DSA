@@ -7,10 +7,10 @@ public class Type_casting {
         System.out.println(b);
 
       // char ch = 'a';
-       //int number = ch;
-       // doubt
-      //  Scanner sc = new Scanner(System.in);
-        //long number = sc.nextFloat();
-       // System.out.println(number);
+      //int number = ch;
+      // doubt
+      //Scanner sc = new Scanner(System.in);
+      //long number = sc.nextFloat();
+      // System.out.println(number);
     }
 }
