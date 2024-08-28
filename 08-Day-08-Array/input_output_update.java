@@ -22,7 +22,7 @@ public class input_output_update {
         marks[3]=90;
         System.out.println("new eng marks :"+marks[3]);
 
-        int percentage=(marks[0]+marks[1]+marks[2]+marks[3])/4;
+        float percentage=(marks[0]+marks[1]+marks[2]+marks[3])/4f;
         System.out.println(percentage+"%");
 
     }
