@@ -3,7 +3,7 @@ import java.util.Collections;
 
 public class Chocola_problem {
     public static void main(String[] args) {
-        // int n=4; int m=6;
+        int n=4; int m=6;
         Integer costver[]={2,1,3,1,4};
         Integer costhor[]={4,1,2};
 
